@@ -1,0 +1,30 @@
+.Seats {
+  display: flex;
+  flex-direction: row;
+}
+
+.SeatsColumn {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 9%;
+}
+
+.Seat {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Seat:hover,
+.Seat.activeSeat,
+.Seat:active {
+  background-color: #0a56bb;
+  color: white;
+  border: 1px solid #0a56bb;
+}
+
+.NoSeat {
+  margin: 42px;
+}

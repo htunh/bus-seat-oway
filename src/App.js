@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+
+import Layout from "./hoc/Layout/Layout";
+import BusDetails from "./containers/BusDetails/BusDetails";
+import CancellationPolicy from "./containers/CancellationPolicy/CancellationPolicy";
+import SeatSelection from "./containers/SeatSelection/SeatSelection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Layout>
+        <Switch>
+          <Route path="/bus-details" component={BusDetails} />
+          <Route path="/cancellation-policy" component={CancellationPolicy} />
+          <Route path="/" exact component={SeatSelection} />
+        </Switch>
+      </Layout>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.SeatsPreview {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.PreviewCard {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.SelectedSeats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.SelectedSeat {
+  box-sizing: border-box;
+  border: 1px solid #faa534;
+  background-color: #faa534;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 0 15px;
+  max-width: 54px;
+}
