@@ -10,10 +10,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import seatSelection from "./store/reducers/SeatSelection";
 
-const composeEnhancers =
-  process.env.NODE_ENV === "development"
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    : null || compose;
+const composeEnhancers = null || compose;
+
+// Use redux-dev-tool extension in chrome only in dev mode
+// const composeEnhancers =
+//   process.env.NODE_ENV === "development"
+//     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+//     : null || compose;
 
 const rootReducer = combineReducers({
   seatSelection: seatSelection,

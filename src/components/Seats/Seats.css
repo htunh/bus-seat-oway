@@ -1,4 +1,4 @@
-.Seats {
+.SeatsRow {
   display: flex;
   flex-direction: row;
 }
@@ -12,19 +12,58 @@
 .Seat {
   box-sizing: border-box;
   border: 1px solid #ccc;
+  border-radius: 8px;
   text-align: center;
-  margin: 10px;
+  margin: 15px;
   cursor: pointer;
 }
 
+.Seat:disabled {
+  pointer-events: none;
+  color: black;
+}
+
 .Seat:hover,
-.Seat.activeSeat,
-.Seat:active {
-  background-color: #0a56bb;
+.Seat.activeSeat {
+  background-color: #faa534;
   color: white;
-  border: 1px solid #0a56bb;
+  border: 1px solid #faa534;
 }
 
 .NoSeat {
   margin: 42px;
+}
+
+.SeatsStatus {
+  text-align: center;
+}
+
+.Dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 40px;
+}
+
+.Available {
+  background-color: #81caff;
+  border: 1px solid #4eb3fc;
+}
+
+.Blocked {
+  color: white;
+  background-color: #9f9f9f;
+  border: 1px solid #6b6b6b;
+}
+
+.Booked {
+  background-color: #0a56bb;
+  border: 1px solid #4eb3fc;
+}
+
+.BookedByLadies {
+  background-color: #ff7272;
+  border: 1px solid #f53232;
 }

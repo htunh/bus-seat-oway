@@ -1,9 +1,10 @@
 .NavigationItem {
-  margin: 0;
+  margin: 0 32px;
   display: flex;
   height: 100%;
   width: auto;
   align-items: center;
+  font-weight: 600;
 }
 
 .NavigationItem a {
@@ -14,10 +15,7 @@
   border-bottom: 4px solid transparent;
 }
 
-.NavigationItem a:hover {
-  font-weight: bold;
-}
-
 .NavigationItem a.NavActive {
+  font-weight: bold;
   border-bottom: 4px solid #0a56bb;
 }

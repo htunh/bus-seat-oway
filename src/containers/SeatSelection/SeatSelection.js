@@ -15,21 +15,6 @@ class SeatSelection extends Component {
   seatClickedHandler = (event, seatNo) => {
     event.preventDefault();
     this.props.onSelectSeat(seatNo);
-    // let updatedSelectedSeats = [...this.state.selectedSeats];
-
-    // if (updatedSelectedSeats.indexOf(seatNo) === -1) {
-    //   updatedSelectedSeats.push(seatNo);
-    // } else {
-    //   const position = updatedSelectedSeats.indexOf(seatNo);
-    //   updatedSelectedSeats.splice(position, 1);
-    // }
-
-    // let updatedTotalPrice = this.state.seatPrice * updatedSelectedSeats.length;
-    // console.log(updatedSelectedSeats)
-    // this.setState({
-    //   selectedSeats: updatedSelectedSeats,
-    //   totalPrice: updatedTotalPrice,
-    // });
   };
 
   render() {

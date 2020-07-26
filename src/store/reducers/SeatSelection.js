@@ -26,6 +26,8 @@ const selectSeat = (state, action) => {
     updatedSelectedSeats.splice(position, 1);
   }
 
+  updatedSelectedSeats.sort();
+
   let updatedTotalPrice = state.seatPrice * updatedSelectedSeats.length;
 
   return updateObject(state, {

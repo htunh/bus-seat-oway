@@ -7,25 +7,31 @@
 }
 
 .PreviewCard {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 3px #ccc;
-  padding: 10px;
-  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 4px;
 }
 
 .SelectedSeats {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 10px;
 }
 
 .SelectedSeat {
-  box-sizing: border-box;
+  border-radius: 8px;
   border: 1px solid #faa534;
   background-color: #faa534;
   color: white;
   text-align: center;
-  margin: 10px;
+  margin: 7px;
   padding: 0 15px;
-  max-width: 54px;
+}
+
+.SeatsPrice {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }

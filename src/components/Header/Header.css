@@ -1,0 +1,78 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BusLogo {
+  margin: auto;
+  margin-left: 32px;
+}
+
+.BusStatus {
+  display: flex;
+  font-weight: bold;
+  margin-top: -32px;
+  margin-left: 10px;
+  padding-bottom: 32px;
+}
+
+.BusBadge {
+  background-color: #1c73eb;
+  border-radius: 20px;
+  padding: 2px 10px;
+  display: block;
+  margin-left: 5px;
+  color: white;
+}
+
+.BusTime {
+  display: flex;
+  margin: auto 80px;
+}
+
+.LastTime {
+  display: flex;
+  flex-flow: column;
+  margin: -26px 0;
+  padding: 10px;
+  width: 140px;
+  text-align: center;
+}
+
+.BusRoute {
+  height: 2px;
+  background: #ccc;
+  margin: 10px 0;
+}
+.BusRoute:before,
+.BusRoute:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  float: left;
+  background: #1c73eb;
+  margin-top: -4px;
+}
+.BusRoute:after {
+  float: right;
+}
+
+.TicketPrice {
+  display: flex;
+  margin: auto 60px;
+}
+
+.PricePerTicket {
+  display: flex;
+  flex-flow: column;
+  color: #777777;
+  text-align: right;
+  margin-top: -8px;
+  margin-right: 8px;
+}
+
+.PricePerTicket > h2 {
+  margin: 0;
+  color: #1c73eb;
+}
